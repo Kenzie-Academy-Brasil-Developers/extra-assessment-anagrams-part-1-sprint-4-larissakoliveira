@@ -1,0 +1,23 @@
+body {
+    background: linear-gradient(135deg, orange 50%, cyan);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+div, p {
+margin: 20px 0 0 20px;
+}
+
+button {
+    cursor: pointer;
+    text-align: center;
+    background-color: rgb(95, 204, 208);
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+#input {
+    border-radius: 10px;
+    width: 20%;
+    height: 20px;
+}
