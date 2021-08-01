@@ -1,10 +1,29 @@
 body {
     background: linear-gradient(135deg, orange 50%, cyan);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
 }
 
-div, p {
-margin: 20px 0 0 20px;
+#section {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    align-items: flex-end;
+}
+
+ div, p, section {
+    margin-top: 15px;
+} 
+
+p {
+    padding: 20px;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
 }
 
 button {
@@ -14,10 +33,46 @@ button {
     padding: 5px;
     border-radius: 10px;
     font-weight: bold;
+    width: 150px;
+}
+
+#reset {
+    width: 90px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    padding: 2px;
 }
 
 #input {
     border-radius: 10px;
-    width: 20%;
-    height: 20px;
+    width: 70%;
+    height: 40px;
+    margin-right: 12px;
+}
+
+@media (min-width: 550px){
+    #input {
+        width: 50%;
+        height: 25px;
+    }
+
+    label {
+        font-size: 18px;
+        line-height: center;
+    }
+
+    div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center
+    }
+
+    button {
+        margin-right: 10px;
+        width: 200px;
+    }
 }
